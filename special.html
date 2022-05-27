@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Food House - Special Recipes Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<style>
+	/* starting mohamed sherif section */
+.myul{
+  background-color: red;
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
+  background-color: rgb(23, 37, 46);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.myuljs{
+  height: 266px !important;
+}
+.myul li {
+  padding: 15px 0;
+}
+.myul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+
+  padding: 0 0 5px 0;
+
+}
+.myul li a:hover{
+  margin-left:5px ;
+  border-bottom: 1px solid white;
+}
+#myicon{
+  color: white;
+  font-size: 30px;
+ cursor: pointer;
+}
+
+@media (min-width:992px){
+  #myicon{
+    display: none;
+  }
+}
+@media (max-width:991px){
+  nav.tm-nav{
+    display: none;
+  }
+
+}
+@media (min-width:540px) {
+	#h{
+		margin-left: 0px;
+    margin-bottom: 393px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (max-width:540px) {
+	#h{
+		margin-left: 0px;
+    margin-bottom: 393px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+}
+@media (max-width:770px){
+	#k{
+		margin-left: 33px;
+    margin-bottom: 12px;
+    transform: translate(-10px, -135px);
+	}
+	
+}
+@media(max-width:910px){
+	#f{
+		padding-right: 85px;
+	}
+}
+/* starting mohamed sherif section */
+
+	.bo {
+		width: 140px;
+		background-color: #78b610;
+		border-radius: 10px;
+		margin-left: 15px;
+	}
+
+	.lo1 {
+		text-decoration: none;
+		color: white;
+		font-size: larger;
+		display: flex;
+		justify-content: center;
+	}
+
+	 .lo1:hover {
+		color: black;	
+	}
+
+	.bo:hover {
+		background-color: white;
+		border: 1px solid #78b610;
+		border-radius: 10px;
+	}
+</style>
+
+<body>
+
+	<div class="container">
+		<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Food House</h1>
+								<h6 class="tm-site-description">Taste The Happiness</h6>
+				      	
+							
+							</div>
+							<i class="fa-solid fa-bars" id="myicon"></i>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="special.html"
+										class="tm-nav-link">Special<span>Recipes</span></a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="reg.html" class="tm-nav-link">Registration</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="myul" id="myul" >
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="about.html" >About</a></li>			
+			<li><a href="special.html" >Special<span>Recipes</span></a></li>
+			<li><a href="contact.html" >Contact</a></li>
+			<li><a href="reg.html">Registration</a></li>
+		</ul>
+		<section id="gtco-special-dishes" class="bg-grey section-padding">
+			<div class="container">
+				<div class="section-content">
+					<div class="heading-section text-center">
+						<span class="subheading">
+							Specialties
+						</span>
+						<h2 style="margin-bottom: 50px;">
+							Special Dishes
+						</h2>
+					</div>
+					<div class="row mt-5">
+						<div class="col-lg-5 col-md-6 align-self-center py-5">
+							<h2 class="special-number" style="margin-left: 15px;">01.</h2>
+							<div class="dishes-text">
+								<h3 style="margin-left: 15px; font-weight: 700; font-size: larger;">
+									<span>Beef</span><br><span
+										style="margin-left: 15px; font-weight: 700; font-size: larger;"> Steak
+										Sauce</span>
+								</h3>
+								<p class="pt-3" id="f" style="margin-left:15px ; display:flex ;flex-wrap: wrap;">Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus
+									voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos
+									excepturi soluta?</p>
+								<h3 class="special-dishes-price" style="margin-left: 15px;">$150.00</h3>
+								<div class="bo" ><a href="reg.html" class="lo1" >book
+										a table</a></div>
+							</div>
+						</div>
+						<div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0" id="h" style="position: relative ;">
+							<img src="img/steak.jpg" alt="" class="img-fluid shadow w-100" style="position:absolute; right: 100px;"	>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0" style="margin-top: 100px;">
+							<img src="img/salmon-zucchini.jpg" alt="" class="img-fluid shadow w-100" style="margin-top: 122px; margin-left: 15px;">
+						</div>
+						<div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5" style="margin-top:10px;" id="k">
+							<h2 class="special-number" style="margin-top: 200px;">02.</h2>
+							<div class="dishes-text" style="margin-top: 0px;">
+								<h3 style="font-weight: 700; font-size: larger;"><span>Salmon</span><br><span style="margin-left: 15px; font-weight: 700; font-size: larger;"> Zucchini</span></h3>
+								<p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
+									accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus
+									eius. In a quis quibusdam omnis atque vero dolores!</p>
+								<h3 class="special-dishes-price">$120.00</h3>
+								<div class="bo" ><a href="reg.html" class="lo1">book
+									a table</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2022 Food House
+
+				| Design: Mohamed Sherif</p>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/parallax.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				// Handle click on paging links
+				$('.tm-paging-link').click(function (e) {
+					e.preventDefault();
+
+					var page = $(this).text().toLowerCase();
+					$('.tm-gallery-page').addClass('hidden');
+					$('#tm-gallery-page-' + page).removeClass('hidden');
+					$('.tm-paging-link').removeClass('active');
+					$(this).addClass("active");
+				});
+			});
+		</script>
+		<script src="js/nav.js"></script>
+</body>
+
+</html>

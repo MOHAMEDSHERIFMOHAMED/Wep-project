@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food House-Register page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reg.css">
+<style>
+    /* starting mohamed sherif section */
+.myul{
+  background-color: red;
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
+  background-color: rgb(23, 37, 46);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.myuljs{
+  height: 266px !important;
+}
+.myul li {
+  padding: 15px 0;
+}
+.myul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+
+  padding: 0 0 5px 0;
+
+}
+.myul li a:hover{
+  margin-left:5px ;
+  border-bottom: 1px solid white;
+}
+#myicon{
+  color: white;
+  font-size: 30px;
+ cursor: pointer;
+}
+
+@media (min-width:992px){
+  #myicon{
+    display: none;
+  }
+}
+@media (max-width:991px){
+  nav.tm-nav{
+    display: none;
+  }
+  #submit{
+      
+      width: 80%;
+  }
+
+}
+/*#submit:hover{
+    background-color: transparent !important;
+  border: 1px solid white;
+    border-radius: 15px;
+}*/
+#ok:hover {
+        background-color: transparent !important;
+        color: white!important;
+        cursor: pointer;
+        border: 1px solid white !important;
+
+    }
+
+#ok{
+    width: 100% !important;
+}
+
+    </style>
+</head>
+
+
+<body>
+
+
+        <!-- Top box -->
+        <!-- Logo & Site Name -->
+        <div class="placeholder">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+                <div class="tm-header">
+                    <div class="row tm-header-inner">
+                        <div class="col-md-6 col-12">
+                            <img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" />
+                            <div class="tm-site-text-box">
+                                <h1 class="tm-site-title">Food House</h1>
+                                <h6 class="tm-site-description">Taste The Happiness</h6>
+                            </div>
+					<i class="fa-solid fa-bars" id="myicon"></i>
+
+                        </div>
+                        <nav class="col-md-6 col-12 tm-nav">
+                            <ul class="tm-nav-ul">
+                                <li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+                                <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+                                <li class="tm-nav-li"><a href="special.html"
+                                        class="tm-nav-link">Special<span>Recipes</span></a></li>
+                                <li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+                                <li class="tm-nav-li"><a href="reg.html" class="tm-nav-link">Registration</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="myul" id="myul" >
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" >About</a></li>			
+            <li><a href="special.html" >Special<span>Recipes</span></a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="reg.html">Registration</a></li>
+        </ul>
+        <section style="height: 450px;">
+            <div class="form">
+                <div class="div1" style="background-color:#78b610; margin-left: 20px;margin-right: 20px;">
+                    <img src="img/b1f1409e1ec85704f8f7b2cef751b6cc.jpg" alt="" style=" width: 100%;">
+                </div class="container">
+                <div class="div2" style="background-color: #78b610; margin-left: 20px; margin-right: 20px;">
+                    <p style="text-align:center; color: white;">join us</p>
+                    <h1 style="text-align: center; color: white;">
+                        Registration
+                    </h1><br>
+                    <form action="#" class="f" id="form" method="post">
+                        <div id="fname" style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="text" placeholder="First Name"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                required>
+                            <i class="fa-solid fa-user"></i>
+                        </div><br>
+                        <div id="lname" style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="text" placeholder="Last Name"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                required>
+                            <i class="fa-solid fa-user"></i>
+                        </div><br>
+                        <div id="email" style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="email" placeholder="E-mail"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                required>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div><br>
+                        <div  style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="tel" placeholder="Mobile"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                id="phone" required>
+                            <i class="fa-solid fa-phone"></i>
+                        </div><br>
+                        <div id="phonediv" style="border:none; margin: 0; display: block; color: red;"></div>
+                        <div id="adderss" style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="text" placeholder="Adderss"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                required>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div><br>
+                        <div id="pass" style="background-color: #78b610; border-bottom: 1px solid white;"><input
+                                type="password" placeholder="Password"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                id="password" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </div><br>
+                        <div id="passworddiv" style="border:none; margin: 0; display: block;  color: red;" ></div>
+                        <div id="g" style="background-color: #78b610; border-bottom: 1px solid white; "><select
+                                name="gender" aria-placeholder="Gender"
+                                style="background-color:transparent; border: none; caret-color: white; outline: none; color: white; width: 100%;"
+                                required>
+                                <option class="gen" value="Male" style="color:  #78b610 ;">Male</option>
+                                <option class="gen" value="Female" style="color:  #78b610 ">Female</option>
+                            </select></div><br>
+                        <div id="submit" style="width: 100%; background-color: transparent;margin-bottom: 30px ;height: 32px; ; border-radius: 15px;margin-top: 15px; border: none;"><input type="submit" id="ok" value="Register" style="width: 100%; margin: 0; background-color: white; color: #78b610; border-radius: 15px;"></div>
+
+                    </form>
+                    <p class="footer">Copyright &copy; 2022 Food House | Design: Mohamed Sherif</p>
+                </div>
+            </div>
+        </section>
+                  
+    
+        <script src="js/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/reg.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Handle click on paging links
+                $('.tm-paging-link').click(function (e) {
+                    e.preventDefault();
+
+                    var page = $(this).text().toLowerCase();
+                    $('.tm-gallery-page').addClass('hidden');
+                    $('#tm-gallery-page-' + page).removeClass('hidden');
+                    $('.tm-paging-link').removeClass('active');
+                    $(this).addClass("active");
+                });
+            });
+        </script>
+        <script src="js/nav.js"></script>
+        
+</body>
+
+</html>
